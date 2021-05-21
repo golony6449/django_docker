@@ -78,5 +78,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: django-ecs-service
-        cluster: default
+        cluster: django-ecs
         wait-for-service-stability: true
