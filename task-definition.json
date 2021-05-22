@@ -24,7 +24,5 @@
   "cpu": "256",
   "memory": "512",
   "networkMode": "awsvpc",
-  "status": "ACTIVE",
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:973791587081:task-definition/django-ecs:1",
   "executionRoleArn": "arn:aws:iam::973791587081:role/ecsTaskExecutionRole"
 }
