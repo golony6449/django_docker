@@ -6,7 +6,7 @@
       "name": "django-ecs",
       "essential": true,
       "image": "973791587081.dkr.ecr.ap-northeast-2.amazonaws.com/django-ecs:latest",
-      "entryPoint": "/app/entrypoint.sh",
+      "entryPoint": [],"/app/entrypoint.sh"],
       "cpu": 0,
       "memory": 128,
       "portMappings": [
