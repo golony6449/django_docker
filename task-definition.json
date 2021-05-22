@@ -6,6 +6,7 @@
       "name": "django-ecs",
       "essential": true,
       "image": "973791587081.dkr.ecr.ap-northeast-2.amazonaws.com/django-ecs:latest",
+      "entryPoint": "/app/entrypoint.sh",
       "cpu": 0,
       "memory": 128,
       "portMappings": [
@@ -20,6 +21,8 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
+  "cpu": "256",
+  "memory": "512",
   "networkMode": "awsvpc",
   "status": "ACTIVE",
   "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:973791587081:task-definition/django-ecs:1"
