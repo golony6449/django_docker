@@ -6,6 +6,6 @@ EXPOSE 8000
 COPY . /app
 WORKDIR /app
 
-RUN ["chmod", "+x", "/app/docker-entrypoint.sh"]
+RUN ["chmod", "+x", "/app/entrypoint.sh"]
 
 ENTRYPOINT "/app/entrypoint.sh"
