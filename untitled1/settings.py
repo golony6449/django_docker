@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
+import untitled1.aws as aws
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +29,7 @@ SECRET_KEY = 'django-insecure-2^%ly=%5vl6u=+^jqx$glz1u*18d)xzs#bp7otc(n_m%_bg1q=
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS.append(aws.get_instance_ip())
 
 
 # Application definition
